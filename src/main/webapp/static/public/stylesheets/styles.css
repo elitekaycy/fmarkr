@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 20px;
+  width: 100%;
+  font-weight: 600;
+  background-color: #37AFE1;
+}
+
+.editor {
+  background-color: #f9f9f9;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #4a4a4a;
+}
+
+.editor-preview-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vh - 60px); /* Full height minus header */
+  gap: 20px;
+}
+
+section {
+  flex: 1;
+  min-width: 300px; /* Prevents sections from getting too narrow */
+  background: #fff;
+  padding: 20px;
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.editor-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  font-size: 1em;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.preview {
+  flex-basis: 50%; /* Take half the space */
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#previewContent {
+  white-space: pre-wrap;
+  font-size: 1.2em;
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  background-color: #fafafa;
+}
+
+footer {
+  margin-top: 20px;
+  font-style: italic;
+  border-top: 1px solid #e1e1e1;
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .editor-preview-wrapper {
+    flex-direction: column; /* Stack on smaller screens */
+  }
+  section {
+    margin-bottom: 20px;
+  }
+  .preview {
+    flex-basis: 100%; /* Full width on mobile */
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
